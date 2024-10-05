@@ -1,0 +1,4 @@
+<map id="TurnOffCommand" name="TurnOffCommand">
+<area shape="rect" id="node1" title="A concrete command class that turns off a smart device in the home automation system." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node2" href="$classCommand.html" title="An abstract class representing a command to be executed on a smart device." alt="" coords="28,5,117,32"/>
+</map>

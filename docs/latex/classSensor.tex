@@ -1,0 +1,82 @@
+\hypertarget{classSensor}{}\doxysection{Sensor Class Reference}
+\label{classSensor}\index{Sensor@{Sensor}}
+
+
+A class that simulates a sensor in the smart home system.  
+
+
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSensor_a7a1279774b785fe8a2099e52ae31013a}{add\+Device}} (\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$device)
+\begin{DoxyCompactList}\small\item\em Adds a smart device to the sensor\textquotesingle{}s list of devices to be notified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSensor_a0e951bf6c97ced5e353b36c626781d95}{remove\+Device}} (\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$device)
+\begin{DoxyCompactList}\small\item\em Removes a smart device from the sensor\textquotesingle{}s list of devices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSensor_ad4d710b933a70aa83de2b9957d3bfefe}{notify\+Devices}} ()
+\begin{DoxyCompactList}\small\item\em Notifies all registered devices when a condition is triggered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that simulates a sensor in the smart home system. 
+
+The \mbox{\hyperlink{classSensor}{Sensor}} class allows the registration of smart devices and notifies them when an environmental condition is met (e.\+g., motion detected). It uses the observer pattern to notify registered devices. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSensor_a7a1279774b785fe8a2099e52ae31013a}\label{classSensor_a7a1279774b785fe8a2099e52ae31013a}} 
+\index{Sensor@{Sensor}!addDevice@{addDevice}}
+\index{addDevice@{addDevice}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{addDevice()}{addDevice()}}
+{\footnotesize\ttfamily void Sensor\+::add\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+
+
+Adds a smart device to the sensor\textquotesingle{}s list of devices to be notified. 
+
+Adds a smart device to the sensor\textquotesingle{}s list of devices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & A pointer to the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSensor_ad4d710b933a70aa83de2b9957d3bfefe}\label{classSensor_ad4d710b933a70aa83de2b9957d3bfefe}} 
+\index{Sensor@{Sensor}!notifyDevices@{notifyDevices}}
+\index{notifyDevices@{notifyDevices}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{notifyDevices()}{notifyDevices()}}
+{\footnotesize\ttfamily void Sensor\+::notify\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Notifies all registered devices when a condition is triggered. 
+
+Notifies all registered devices.
+
+This method calls the perform\+Action() method of all registered devices.
+
+This method calls the perform\+Action() method on all devices that are currently registered with the sensor. \mbox{\Hypertarget{classSensor_a0e951bf6c97ced5e353b36c626781d95}\label{classSensor_a0e951bf6c97ced5e353b36c626781d95}} 
+\index{Sensor@{Sensor}!removeDevice@{removeDevice}}
+\index{removeDevice@{removeDevice}!Sensor@{Sensor}}
+\doxysubsubsection{\texorpdfstring{removeDevice()}{removeDevice()}}
+{\footnotesize\ttfamily void Sensor\+::remove\+Device (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$}]{device }\end{DoxyParamCaption})}
+
+
+
+Removes a smart device from the sensor\textquotesingle{}s list of devices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & A pointer to the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} to be removed.\\
+\hline
+{\em device} & A pointer to the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} to be removed.\\
+\hline
+\end{DoxyParams}
+This method finds the device in the list and removes it if found. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sensor.\+h\item 
+Sensor.\+cpp\end{DoxyCompactItemize}

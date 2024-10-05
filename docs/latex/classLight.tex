@@ -1,0 +1,123 @@
+\hypertarget{classLight}{}\doxysection{Light Class Reference}
+\label{classLight}\index{Light@{Light}}
+
+
+A class that represents a smart light in the home automation system.  
+
+
+
+
+{\ttfamily \#include $<$Light.\+h$>$}
+
+
+
+Inheritance diagram for Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classLight__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Light\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classLight__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLight_aeb5df09a25a32f19fdffa761268ba24f}{Light}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classLight}{Light}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLight_a084746a8b8e65fab1f7e0d7c81eb037b}{get\+Status}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the current status of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLight_ae1b45d5c26ff00cc862e7b722f5e1184}{perform\+Action}} () override
+\begin{DoxyCompactList}\small\item\em Toggles the light\textquotesingle{}s state between on and off. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLight_a43875e387c6de96b0f16f8bba9f48cbb}{get\+Device\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the type of the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class that represents a smart light in the home automation system. 
+
+The \mbox{\hyperlink{classLight}{Light}} class allows the user to turn the light on or off and provides the current status of the light. It implements the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLight_aeb5df09a25a32f19fdffa761268ba24f}\label{classLight_aeb5df09a25a32f19fdffa761268ba24f}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classLight}{Light}} object. 
+
+Initializes the light to the off state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLight_a43875e387c6de96b0f16f8bba9f48cbb}\label{classLight_a43875e387c6de96b0f16f8bba9f48cbb}} 
+\index{Light@{Light}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the type of the device. 
+
+Returns the type of this device.
+
+\begin{DoxyReturn}{Returns}
+A string \char`\"{}\+Light\char`\"{}, representing the type of the device. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSmartDevice_a28e9732bc5de5fd4311d9b75d9229b10}{Smart\+Device}}.
+
+\mbox{\Hypertarget{classLight_a084746a8b8e65fab1f7e0d7c81eb037b}\label{classLight_a084746a8b8e65fab1f7e0d7c81eb037b}} 
+\index{Light@{Light}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily std\+::string Light\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the current status of the light. 
+
+\begin{DoxyReturn}{Returns}
+A string, either \char`\"{}on\char`\"{} or \char`\"{}off\char`\"{}, representing the light\textquotesingle{}s status.
+
+A string representing the current status\+: \char`\"{}on\char`\"{} or \char`\"{}off\char`\"{}. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSmartDevice_aaf0482bcc2f0e840055c847b4388a796}{Smart\+Device}}.
+
+\mbox{\Hypertarget{classLight_ae1b45d5c26ff00cc862e7b722f5e1184}\label{classLight_ae1b45d5c26ff00cc862e7b722f5e1184}} 
+\index{Light@{Light}!performAction@{performAction}}
+\index{performAction@{performAction}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{performAction()}{performAction()}}
+{\footnotesize\ttfamily void Light\+::perform\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Toggles the light\textquotesingle{}s state between on and off. 
+
+Changes the light\textquotesingle{}s state from off to on, or from on to off.
+
+This method switches the light on if it\textquotesingle{}s off, and switches it off if it\textquotesingle{}s on. 
+
+Implements \mbox{\hyperlink{classSmartDevice_a40f6a7cf197a57582dd765ce896c28f6}{Smart\+Device}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Light.\+h\item 
+Light.\+cpp\end{DoxyCompactItemize}

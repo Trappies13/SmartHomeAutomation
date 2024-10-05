@@ -1,0 +1,90 @@
+\hypertarget{classTurnOffCommand}{}\doxysection{Turn\+Off\+Command Class Reference}
+\label{classTurnOffCommand}\index{TurnOffCommand@{TurnOffCommand}}
+
+
+A concrete command class that turns off a smart device in the home automation system.  
+
+
+
+
+{\ttfamily \#include $<$Turn\+Off\+Command.\+h$>$}
+
+
+
+Inheritance diagram for Turn\+Off\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classTurnOffCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Turn\+Off\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classTurnOffCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTurnOffCommand_a3fb6e7ba886209ddf8b15d272032cdbc}{Turn\+Off\+Command}} (\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classTurnOffCommand}{Turn\+Off\+Command}} object for a specific smart device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTurnOffCommand_aba8b14488a0bef067907fd4ad029a66e}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to turn off the smart device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A concrete command class that turns off a smart device in the home automation system. 
+
+The \mbox{\hyperlink{classTurnOffCommand}{Turn\+Off\+Command}} class implements the \mbox{\hyperlink{classCommand}{Command}} interface. It encapsulates the action of turning off a specific smart device. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTurnOffCommand_a3fb6e7ba886209ddf8b15d272032cdbc}\label{classTurnOffCommand_a3fb6e7ba886209ddf8b15d272032cdbc}} 
+\index{TurnOffCommand@{TurnOffCommand}!TurnOffCommand@{TurnOffCommand}}
+\index{TurnOffCommand@{TurnOffCommand}!TurnOffCommand@{TurnOffCommand}}
+\doxysubsubsection{\texorpdfstring{TurnOffCommand()}{TurnOffCommand()}}
+{\footnotesize\ttfamily Turn\+Off\+Command\+::\+Turn\+Off\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSmartDevice}{Smart\+Device}} $\ast$}]{dev }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classTurnOffCommand}{Turn\+Off\+Command}} object for a specific smart device. 
+
+Constructs a \mbox{\hyperlink{classTurnOffCommand}{Turn\+Off\+Command}} object for the given smart device.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dev} & A pointer to the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} that the command will operate on.\\
+\hline
+{\em dev} & A pointer to the \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} that the command will control. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTurnOffCommand_aba8b14488a0bef067907fd4ad029a66e}\label{classTurnOffCommand_aba8b14488a0bef067907fd4ad029a66e}} 
+\index{TurnOffCommand@{TurnOffCommand}!execute@{execute}}
+\index{execute@{execute}!TurnOffCommand@{TurnOffCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Turn\+Off\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to turn off the smart device. 
+
+Executes the command by turning off the smart device.
+
+This method calls the perform\+Action() method on the associated smart device. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Turn\+Off\+Command.\+h\item 
+Turn\+Off\+Command.\+cpp\end{DoxyCompactItemize}

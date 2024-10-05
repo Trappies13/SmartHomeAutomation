@@ -1,0 +1,68 @@
+\hypertarget{classCommand}{}\doxysection{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+An abstract class representing a command to be executed on a smart device.  
+
+
+
+
+{\ttfamily \#include $<$Command.\+h$>$}
+
+
+
+Inheritance diagram for Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classCommand__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Executes the command. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCommand_aa545a53d35818f9efb936daf3fa16c61}{$\sim$\+Command}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract class representing a command to be executed on a smart device. 
+
+The \mbox{\hyperlink{classCommand}{Command}} class defines an interface for executing operations on smart devices. It follows the \mbox{\hyperlink{classCommand}{Command}} Design Pattern, encapsulating actions as objects that can be executed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommand_aa545a53d35818f9efb936daf3fa16c61}\label{classCommand_aa545a53d35818f9efb936daf3fa16c61}} 
+\index{Command@{Command}!````~Command@{$\sim$Command}}
+\index{````~Command@{$\sim$Command}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command()}{~Command()}}
+{\footnotesize\ttfamily virtual Command\+::$\sim$\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor. 
+
+Ensures that derived class destructors are called properly. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\label{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}} 
+\index{Command@{Command}!execute@{execute}}
+\index{execute@{execute}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the command. 
+
+This is a pure virtual method that will be implemented by derived classes to perform specific actions on a smart device. 
+
+Implemented in \mbox{\hyperlink{classTurnOffCommand_aba8b14488a0bef067907fd4ad029a66e}{Turn\+Off\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Command.\+h\end{DoxyCompactItemize}
