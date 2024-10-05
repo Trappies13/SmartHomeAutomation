@@ -1,0 +1,81 @@
+\hypertarget{classSmartDevice}{}\doxysection{Smart\+Device Class Reference}
+\label{classSmartDevice}\index{SmartDevice@{SmartDevice}}
+
+
+An abstract base class representing a smart device in the home automation system.  
+
+
+
+
+{\ttfamily \#include $<$Smart\+Device.\+h$>$}
+
+
+
+Inheritance diagram for Smart\+Device\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSmartDevice__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \mbox{\hyperlink{classSmartDevice_aaf0482bcc2f0e840055c847b4388a796}{get\+Status}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the current status of the smart device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartDevice_a40f6a7cf197a57582dd765ce896c28f6}\label{classSmartDevice_a40f6a7cf197a57582dd765ce896c28f6}} 
+virtual void \mbox{\hyperlink{classSmartDevice_a40f6a7cf197a57582dd765ce896c28f6}{perform\+Action}} ()=0
+\begin{DoxyCompactList}\small\item\em Performs the device\textquotesingle{}s main action (e.\+g., toggling the light, locking/unlocking a door). \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classSmartDevice_a28e9732bc5de5fd4311d9b75d9229b10}{get\+Device\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the device. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSmartDevice_a1dc719fc9802d21ef8c10d17993f6adf}\label{classSmartDevice_a1dc719fc9802d21ef8c10d17993f6adf}} 
+virtual \mbox{\hyperlink{classSmartDevice_a1dc719fc9802d21ef8c10d17993f6adf}{$\sim$\+Smart\+Device}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor to ensure proper cleanup of derived objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract base class representing a smart device in the home automation system. 
+
+The \mbox{\hyperlink{classSmartDevice}{Smart\+Device}} class provides an interface for devices like lights, thermostats, and locks. It includes methods for querying the device status, performing an action, and getting the device type. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSmartDevice_a28e9732bc5de5fd4311d9b75d9229b10}\label{classSmartDevice_a28e9732bc5de5fd4311d9b75d9229b10}} 
+\index{SmartDevice@{SmartDevice}!getDeviceType@{getDeviceType}}
+\index{getDeviceType@{getDeviceType}!SmartDevice@{SmartDevice}}
+\doxysubsubsection{\texorpdfstring{getDeviceType()}{getDeviceType()}}
+{\footnotesize\ttfamily virtual std\+::string Smart\+Device\+::get\+Device\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the type of the device. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the device (e.\+g., \char`\"{}\+Light\char`\"{}, \char`\"{}\+Door\+Lock\char`\"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDoorLock_a21c52ace84842b0458ec00428dc78717}{Door\+Lock}}, \mbox{\hyperlink{classLight_a43875e387c6de96b0f16f8bba9f48cbb}{Light}}, \mbox{\hyperlink{classSmartThermostatIntegrator_a13ea2faf27be4ede86cff5c91af506c5}{Smart\+Thermostat\+Integrator}}, and \mbox{\hyperlink{classThermostat_a4708d00554ad6afe224f087e4bbaf078}{Thermostat}}.
+
+\mbox{\Hypertarget{classSmartDevice_aaf0482bcc2f0e840055c847b4388a796}\label{classSmartDevice_aaf0482bcc2f0e840055c847b4388a796}} 
+\index{SmartDevice@{SmartDevice}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!SmartDevice@{SmartDevice}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily virtual std\+::string Smart\+Device\+::get\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the current status of the smart device. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the device\textquotesingle{}s status (e.\+g., \char`\"{}on\char`\"{}, \char`\"{}off\char`\"{}, \char`\"{}locked\char`\"{}, etc.). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSmartThermostatIntegrator_a419799006c511ff6b4d182781deb5b76}{Smart\+Thermostat\+Integrator}}, \mbox{\hyperlink{classDoorLock_a515323719783b64518af3c9544db94c4}{Door\+Lock}}, \mbox{\hyperlink{classLight_a084746a8b8e65fab1f7e0d7c81eb037b}{Light}}, and \mbox{\hyperlink{classThermostat_a39c9935af657bf40969f35421842f753}{Thermostat}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Smart\+Device.\+h\end{DoxyCompactItemize}

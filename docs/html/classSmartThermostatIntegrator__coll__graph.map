@@ -1,0 +1,4 @@
+<map id="SmartThermostatIntegrator" name="SmartThermostatIntegrator">
+<area shape="rect" id="node1" title="An adapter class that integrates a legacy thermostat into the smart home system." alt="" coords="5,80,205,107"/>
+<area shape="rect" id="node2" href="$classSmartDevice.html" title="An abstract base class representing a smart device in the home automation system." alt="" coords="52,5,159,32"/>
+</map>

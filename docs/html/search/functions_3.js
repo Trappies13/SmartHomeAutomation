@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['getdevicetype_40',['getDeviceType',['../classDoorLock.html#a21c52ace84842b0458ec00428dc78717',1,'DoorLock::getDeviceType()'],['../classLight.html#a43875e387c6de96b0f16f8bba9f48cbb',1,'Light::getDeviceType()'],['../classSmartDevice.html#a28e9732bc5de5fd4311d9b75d9229b10',1,'SmartDevice::getDeviceType()'],['../classSmartThermostatIntegrator.html#a13ea2faf27be4ede86cff5c91af506c5',1,'SmartThermostatIntegrator::getDeviceType()'],['../classThermostat.html#a4708d00554ad6afe224f087e4bbaf078',1,'Thermostat::getDeviceType()']]],
+  ['getlegacytemperature_41',['getLegacyTemperature',['../classLegacyThermostat.html#a96e76d30fdc89371f5f9d4c9515759f7',1,'LegacyThermostat']]],
+  ['getstatus_42',['getStatus',['../classDoorLock.html#a515323719783b64518af3c9544db94c4',1,'DoorLock::getStatus()'],['../classLight.html#a084746a8b8e65fab1f7e0d7c81eb037b',1,'Light::getStatus()'],['../classSmartDevice.html#aaf0482bcc2f0e840055c847b4388a796',1,'SmartDevice::getStatus()'],['../classSmartThermostatIntegrator.html#a419799006c511ff6b4d182781deb5b76',1,'SmartThermostatIntegrator::getStatus()'],['../classThermostat.html#a39c9935af657bf40969f35421842f753',1,'Thermostat::getStatus()']]],
+  ['gettemperature_43',['getTemperature',['../classSmartThermostatIntegrator.html#a81c0360dc42cda1188e783a8f4ab768e',1,'SmartThermostatIntegrator::getTemperature()'],['../classThermostat.html#ad9cc8c4f8377a7c299041e1c82937f26',1,'Thermostat::getTemperature()']]]
+];

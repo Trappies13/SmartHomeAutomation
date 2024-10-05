@@ -1,0 +1,7 @@
+<map id="SmartDevice" name="SmartDevice">
+<area shape="rect" id="node1" title="An abstract base class representing a smart device in the home automation system." alt="" coords="161,5,268,32"/>
+<area shape="rect" id="node2" href="$classDoorLock.html" title="A class that represents a smart door lock in the home automation system." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$classLight.html" title="A class that represents a smart light in the home automation system." alt="" coords="113,80,167,107"/>
+<area shape="rect" id="node4" href="$classSmartThermostatIntegrator.html" title="An adapter class that integrates a legacy thermostat into the smart home system." alt="" coords="191,80,391,107"/>
+<area shape="rect" id="node5" href="$classThermostat.html" title="A class that represents a smart thermostat in the home automation system." alt="" coords="415,80,513,107"/>
+</map>
